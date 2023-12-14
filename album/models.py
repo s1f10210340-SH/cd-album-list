@@ -11,7 +11,7 @@ from django.db import models
 class Albums(models.Model):
     albumid = models.AutoField(db_column='AlbumId', primary_key=True)  # Field name made lowercase.
     title = models.TextField(db_column='Title')  # Field name made lowercase. This field type is a guess.
-    artist = models.ForeignKey('Artists', models.DO_NOTHING, related_name='album', db_column='ArtistId')  # Field name made lowercase.
+    # artist = models.ForeignKey('Artists', models.DO_NOTHING, related_name='album', db_column='ArtistId')  # Field name made lowercase.
 
     class Meta:
         managed = False
